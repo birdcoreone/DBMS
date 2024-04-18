@@ -1,6 +1,8 @@
 https://drive.google.com/file/d/1sBb9CGuzcvVEfppOLqL4Ti7ospvtTCjF/view?usp=drivesdk
 
+--MySQL Query --
 -- Identify Entities:
+
 Identify the main entities in the system. In this case, it's "Person" and "Ghana Card".
 Define Attributes:
 For each entity, list the attributes. For example:
@@ -15,3 +17,22 @@ Represent Relationships:
 Use lines to connect related entities.
 Label the lines with the type of relationship (e.g., "one-to-many").
 Here's a textual representation of the ER diagram for the Ghana card system: --
+
+CREATE TABLE Person (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    First_Name VARCHAR(50),
+    Last_Name VARCHAR(50),
+    Date_of_Birth DATE,
+    Gender VARCHAR(10),
+    Address VARCHAR(100),
+    Nationality VARCHAR(50)
+);
+
+CREATE TABLE Ghana_Card (
+    Card_Number INT PRIMARY KEY AUTO_INCREMENT,
+    Issue_Date DATE,
+    Expiry_Date DATE,
+    Person_ID INT,
+    FOREIGN KEY (Person_ID) REFERENCES Person(ID)
+);
+
