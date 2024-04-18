@@ -1,1 +1,17 @@
 https://drive.google.com/file/d/1sBb9CGuzcvVEfppOLqL4Ti7ospvtTCjF/view?usp=drivesdk
+
+-- Identify Entities:
+Identify the main entities in the system. In this case, it's "Person" and "Ghana Card".
+Define Attributes:
+For each entity, list the attributes. For example:
+Person: ID, First Name, Last Name, Date of Birth, Gender, Address, Nationality
+Ghana Card: Card Number, Issue Date, Expiry Date
+Identify Relationships:
+Determine the relationships between entities. In this case, there's a one-to-many relationship between "Person" and "Ghana Card", as one person can have multiple Ghana cards.
+Represent Entities and Attributes:
+Draw rectangles to represent entities. Write the entity name inside the rectangle.
+List the attributes inside the respective entity rectangles.
+Represent Relationships:
+Use lines to connect related entities.
+Label the lines with the type of relationship (e.g., "one-to-many").
+Here's a textual representation of the ER diagram for the Ghana card system: --
